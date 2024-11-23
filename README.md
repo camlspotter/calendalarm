@@ -22,11 +22,22 @@
 	- Your Credentials
 	  - Download the credential and save `client_secret...json`
 
-## credentials.json
+## _data/app-credentials.json
 
-Copy your `client_secret...json` as `credentials.json` in this directory.
+Copy your `client_secret...json` as `_data/app_credentials.json` in this directory.
 
-	
+## Add a Google account
+
+- `./get48h.py add-token <name>`, for ex, `./get48.py add-token default`
+- Choose a Google account and allow access.  The project is not approved yet, you have to make the browser proceed to an unsafe zone.
+- If successful, it creates `_data/token-<name>.json`.
+- It also creates `_data/calendars.json`. Check the file and removes calendars you are not interested.
+
+## List the events in near future
+
+- `./get48.py list`
+
+
 
 
 

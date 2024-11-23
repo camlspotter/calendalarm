@@ -50,7 +50,7 @@ def main() -> None:
 
 scopes = ['https://www.googleapis.com/auth/calendar.readonly']
 
-flow = InstalledAppFlow.from_client_secrets_file('_data/credentials.json', scopes)
+flow = InstalledAppFlow.from_client_secrets_file('_data/app-credentials.json', scopes)
 
 config = dict[str,dict[str, str]]
 
